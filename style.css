@@ -7,10 +7,35 @@
 html {
   font-size: 62.5%;
 }
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header > h1 {
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 3rem 0;
+  padding: 0.8rem;
+  text-transform: capitalize;
+  border-bottom: 2px solid green;
+  color: green;
+}
+
+main.main {
+  width: 100rem;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  column-gap: 0.3rem;
+  row-gap: 3rem;
+}
 
 .card {
   max-width: 30rem;
-  margin: 5rem auto;
   border: 1px solid #ccc;
   border-radius: 1rem;
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.6);
@@ -21,6 +46,7 @@ html {
 
 .card img {
   width: 100%;
+  height: 25rem;
   margin-bottom: 2rem;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
@@ -37,6 +63,10 @@ html {
   padding: 0 2rem;
 }
 
+.last-card {
+  grid-column: 3;
+  grid-row: 2;
+}
 #dog-name {
   font-size: 2.4rem;
   align-self: center;
