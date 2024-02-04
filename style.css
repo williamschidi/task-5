@@ -74,7 +74,9 @@ main.main {
   main.main {
     display: flex;
     flex-direction: column;
-    margin: 5rem auto;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem auto;
   }
 
   header > h1 {
