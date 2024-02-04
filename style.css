@@ -25,7 +25,7 @@ header > h1 {
 }
 
 main.main {
-  width: 100rem;
+  max-width: 100rem;
   margin: 2rem auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -62,11 +62,6 @@ main.main {
   padding: 0 2rem;
 }
 
-/* .last-card {
-  grid-column: 3;
-  grid-row: 2;
-} */
-
 .description span {
   font-weight: 600;
 }
@@ -76,12 +71,13 @@ main.main {
 }
 
 @media screen and (max-width: 600px) {
-  html {
-    font-size: 60%;
-  }
   main.main {
     display: flex;
     flex-direction: column;
-    margin: 4rem auto;
+    margin: 5rem auto;
+  }
+
+  header > h1 {
+    font-size: 2.8rem;
   }
 }
