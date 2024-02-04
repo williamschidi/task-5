@@ -51,10 +51,6 @@ main.main {
   border-top-left-radius: 1rem;
 }
 
-.card img.dog {
-  border-radius: 1000px;
-}
-
 .card section {
   display: flex;
   width: 100%;
@@ -66,14 +62,10 @@ main.main {
   padding: 0 2rem;
 }
 
-.last-card {
+/* .last-card {
   grid-column: 3;
   grid-row: 2;
-}
-#dog-name {
-  font-size: 2.4rem;
-  align-self: center;
-}
+} */
 
 .description span {
   font-weight: 600;
@@ -81,4 +73,15 @@ main.main {
 
 .description .curSign {
   font-size: 1.4rem;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 60%;
+  }
+  main.main {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem auto;
+  }
 }
